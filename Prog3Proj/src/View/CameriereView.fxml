@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.CameriereViewController">
+   <children>
+      <VBox prefHeight="458.0" prefWidth="172.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserire numero tavolo">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <ComboBox fx:id="tavoliBox" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Primi piatti">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="58.0" />
+               </VBox.margin>
+            </Text>
+            <ComboBox fx:id="primiBox" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextField fx:id="primiText" prefHeight="31.0" prefWidth="103.0" promptText="Quantità">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#aggiungiPrimiButtonClick" text="Aggiungi">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#rimuoviPrimiButtonClick" text="Rimuovi">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Più venduto:">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="primiVendutoText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <VBox>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Secondi piatti">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="150.0" />
+               </VBox.margin>
+            </Text>
+            <ComboBox fx:id="secondiBox" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextField fx:id="secondiText" prefHeight="31.0" prefWidth="0.0" promptText="Quantità">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#aggiungiSecondiButtonClick" text="Aggiungi">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#rimuoviSecondiButtonClick" text="Rimuovi">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Più venduto:" />
+            <Text fx:id="secondiVendutoText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </VBox>
+      <VBox>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contorni">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="150.0" />
+               </VBox.margin>
+            </Text>
+            <ComboBox fx:id="contorniBox" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextField fx:id="contorniText" prefHeight="31.0" prefWidth="0.0" promptText="Quantità">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#aggiungiContorniButtonClick" prefHeight="29.0" prefWidth="74.0" text="Aggiungi">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#rimuoviContorniButtonClick" text="Rimuovi">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Più venduto:" />
+            <Text fx:id="contorniVendutoText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+      </VBox>
+      <VBox prefHeight="400.0" prefWidth="80.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dessert/Frutta">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="150.0" />
+               </VBox.margin>
+            </Text>
+            <ComboBox fx:id="dessertBox" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextField fx:id="dessertText" prefHeight="31.0" prefWidth="0.0" promptText="Quantità">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#aggiungiDessertButtonClick" text="Aggiungi">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#rimuoviDessertButtonClick" text="Rimuovi">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Più venduto:" />
+            <Text fx:id="dessertVendutoText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Region prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="51.0" layoutY="177.0" mnemonicParsing="false" onAction="#ordinaButtonClick" text="Ordina" />
+            <Button layoutX="32.0" layoutY="58.0" mnemonicParsing="false" onAction="#scontrinoButtonClick" prefHeight="31.0" prefWidth="104.0" text="Scontrino" />
+            <Button layoutX="52.0" layoutY="355.0" mnemonicParsing="false" onAction="#annullaButtonClick" text="Annulla" />
+            <Text layoutX="14.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annulla l'ultimo ordine" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

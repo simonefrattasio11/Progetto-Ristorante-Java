@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ContantiViewController">
+   <children>
+      <Text layoutX="53.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Importo versato:" />
+      <TextField fx:id="versatoTextField" layoutX="207.0" layoutY="120.0" />
+      <Text layoutX="91.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resto:" />
+      <Text layoutX="59.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Importo dovuto:" />
+      <Text fx:id="dovutoText" layoutX="272.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="319.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="€" wrappingWidth="18.0859375" />
+      <Text fx:id="restoText" layoutX="164.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Button fx:id="finitoButton" layoutX="466.0" layoutY="319.0" mnemonicParsing="false" onAction="#finitoButtonClick" text="Finito" />
+      <Text layoutX="217.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="€" />
+      <Button layoutX="81.0" layoutY="224.0" mnemonicParsing="false" onAction="#pagaButtonClick" text="Paga" />
+   </children>
+</AnchorPane>

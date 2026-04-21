@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.LoginController">
+   <right>
+      <VBox onDragDetected="#cassiereButtonClick" prefHeight="380.0" prefWidth="173.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cassiere">
+               <VBox.margin>				
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="usernameCassiere">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin></TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Text>
+            <PasswordField fx:id="passwordCassiere">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Button mnemonicParsing="false" onAction="#cassiereButtonClick" text="Login">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <VBox prefHeight="380.0" prefWidth="135.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cameriere">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="usernameCameriere">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin></TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Text>
+            <PasswordField fx:id="passwordCameriere">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Button mnemonicParsing="false" onAction="#cameriereButtonClick" text="Login">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <ImageView fitHeight="150.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../Desktop/Prog3Proj/depositphotos_77833254-stock-illustration-restaurant-logo.jpg" />
+         </image>
+      </ImageView>
+   </top>
+</BorderPane>
